@@ -1,0 +1,10 @@
+<select #selLang (change)="translateLanguageTo(selLang.value)">
+  <option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</option>
+</select>
+<h1>{{'TITLE' | translate}}</h1>
+  <ul>
+    <label for="currency1"></label>
+    <input type="text" id="currency1" name="currency1">
+    <label for="currency2"></label>
+    <input type="text" id="currency2" name="currency2">   
+  </ul>
